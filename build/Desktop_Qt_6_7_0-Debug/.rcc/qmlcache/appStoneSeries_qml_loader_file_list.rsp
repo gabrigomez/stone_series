@@ -1,0 +1,5 @@
+--resource
+/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmake_StoneSeries.qrc
+--resource
+/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/appStoneSeries_raw_qml_0.qrc
+/StoneSeries/Main.qml

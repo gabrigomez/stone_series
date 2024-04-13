@@ -1,0 +1,10 @@
+--bare
+-I
+/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug
+-I
+/home/uticket/Downloads/qt/6.7.0/gcc_64/./qml
+--resource
+/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmake_StoneSeries.qrc
+--resource
+/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/appStoneSeries_raw_qml_0.qrc
+/home/uticket/StoneSeries/Main.qml

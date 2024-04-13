@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/StoneSeries/">
+    <file alias="Main.qml">/home/uticket/StoneSeries/Main.qml</file>
+  </qresource>
+</RCC>
+
