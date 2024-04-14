@@ -5,6 +5,8 @@ import "Api.js" as Api
 Rectangle {
   id: searchContainer
 
+  signal searchStarted
+
   color: "red"
   width: parent.width
   height: 40
@@ -31,6 +33,7 @@ Rectangle {
 
       onClicked: {
         Api.fetchShows(searchInput.text)
+        searchStarted()
       }
       anchors {
         right: parent.right

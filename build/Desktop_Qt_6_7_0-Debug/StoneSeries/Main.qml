@@ -9,6 +9,8 @@ Window {
   height: 1000
   visible: true
 
+  property bool isSearching: false
+
   Title {
     id: titleContainer
 
@@ -38,6 +40,15 @@ Window {
       id: searchContainer
     }
 
+    Connections {
+      target: searchContainer
+      onSearchStarted: {
+        root.isSearching = true
+      }
+    }
+
+    Trending {}
+
     Rectangle {
       id: results
 
@@ -46,16 +57,22 @@ Window {
         bottom: parent.bottom
       }
 
+      visible: isSearching
+      opacity: visible ? 1 : 0
+
+      Behavior on opacity {
+        NumberAnimation {
+          duration: 1000
+        }
+      }
+
       height: 80
       width: parent.width
       color: "gray"
 
       ListView {
         id: showListView
-        visible: !showDetailsListView
         spacing: 10
-
-        clip: true
 
         anchors {
           fill: parent
