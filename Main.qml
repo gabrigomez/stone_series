@@ -12,6 +12,8 @@ Window {
   Title {
     id: titleContainer
 
+    z: 1
+
     anchors {
       top: root.top
       left: root.left
@@ -32,6 +34,7 @@ Window {
     color: "green"
 
     SearchBar {
+      z: 1
       id: searchContainer
     }
 
@@ -52,6 +55,8 @@ Window {
         visible: !showDetailsListView
         spacing: 10
 
+        clip: true
+
         anchors {
           fill: parent
         }
@@ -61,22 +66,30 @@ Window {
         }
 
         delegate: Rectangle {
-          width: parent.width
-          height: 100
-          border.color: "blue"
-          color: "transparent"
+          width: parent ? parent.width / 1.2 : undefined
+          height: 300
+          radius: 70
+
+          anchors.horizontalCenter: parent ? parent.horizontalCenter : undefined
+
+          //border.color: "blue"
+          //color: "transparent"
           Rectangle {
             anchors.fill: parent
+            anchors.centerIn: parent
+            color: "transparent"
 
             Image {
               id: seriesImage
-              sourceSize.width: 300 // Tamanho da imagem
-              sourceSize.height: 100 // Tamanho da imagem
-              source: modelData.show.image.medium
+              sourceSize.width: parent.width / 1.2
+              sourceSize.height: 300
+
+              source: modelData.show.image ? modelData.show.image.medium : "https://t3.ftcdn.net/jpg/03/34/83/22/360_F_334832255_IMxvzYRygjd20VlSaIAFZrQWjozQH6BQ.jpg"
             }
 
             Text {
               id: serieTitle
+
               anchors {
                 bottom: parent.verticalCenter
                 left: seriesImage.right
@@ -85,8 +98,9 @@ Window {
               }
 
               text: modelData.show.name
-              font.pixelSize: 22
+              font.pixelSize: 36
               font.bold: true
+              wrapMode: Text.WordWrap
             }
             Text {
               anchors {
@@ -99,7 +113,7 @@ Window {
 
               text: modelData.show.rating.average ? "Rating: "
                                                     + modelData.show.rating.average.toString(
-                                                      ) : "Sem avaliação"
+                                                      ) + "/10" : "Sem avaliação"
               font.pixelSize: 16
             }
             MouseArea {
