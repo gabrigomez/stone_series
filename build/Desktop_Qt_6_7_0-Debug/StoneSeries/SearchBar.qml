@@ -7,7 +7,6 @@ Rectangle {
 
   signal searchStarted
 
-  color: "red"
   width: parent.width
   height: 40
 
@@ -22,9 +21,8 @@ Rectangle {
 
     anchors.fill: parent
     verticalAlignment: TextInput.AlignVCenter
-
     font.pixelSize: 18
-    color: "white"
+    color: "black"
     leftPadding: 4
 
     Button {

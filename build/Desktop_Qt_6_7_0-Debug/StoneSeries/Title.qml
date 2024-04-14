@@ -6,7 +6,7 @@ Rectangle {
 
   width: parent.width
   height: 80
-  color: "blue"
+  color: "#99d98c"
 
   Text {
     text: "Stone Series"

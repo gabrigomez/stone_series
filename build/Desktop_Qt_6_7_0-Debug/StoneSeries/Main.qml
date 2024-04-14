@@ -13,9 +13,7 @@ Window {
 
   Title {
     id: titleContainer
-
     z: 1
-
     anchors {
       top: root.top
       left: root.left
@@ -33,7 +31,7 @@ Window {
       right: parent.right
     }
 
-    color: "green"
+    color: "#0D1B2A"
 
     SearchBar {
       z: 1
@@ -68,7 +66,7 @@ Window {
 
       height: 80
       width: parent.width
-      color: "gray"
+      color: "#1B263B"
 
       ListView {
         id: showListView
