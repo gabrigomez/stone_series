@@ -8,5 +8,8 @@
 --resource
 /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/appStoneSeries_raw_qml_0.qrc
 /home/uticket/StoneSeries/Main.qml
+/home/uticket/StoneSeries/Title.qml
+/home/uticket/StoneSeries/SearchBar.qml
+/home/uticket/StoneSeries/Api.js
 --json
 /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/appStoneSeries_qmllint.json

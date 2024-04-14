@@ -825,7 +825,10 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
+		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Api_js.cpp",
 		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Main_qml.cpp",
+		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_SearchBar_qml.cpp",
+		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Title_qml.cpp",
 		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_qmlcache_loader.cpp",
 		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_appStoneSeries_raw_qml_0.cpp",
 		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_qmake_StoneSeries.cpp",
@@ -847,7 +850,10 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
+		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Api_js.cpp",
 		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Main_qml.cpp",
+		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_SearchBar_qml.cpp",
+		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Title_qml.cpp",
 		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_qmlcache_loader.cpp",
 		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_appStoneSeries_raw_qml_0.cpp",
 		"/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_qmake_StoneSeries.cpp",

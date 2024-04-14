@@ -2,4 +2,7 @@ module StoneSeries
 typeinfo appStoneSeries.qmltypes
 prefer :/StoneSeries/
 Main 1.0 Main.qml
+Title 1.0 Title.qml
+SearchBar 1.0 SearchBar.qml
+Api 1.0 Api.js
 

@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
+import "Api.js" as Api
 
 Window {
   id: root
@@ -8,58 +9,13 @@ Window {
   height: 1000
   visible: true
 
-  function fetchShows(query) {
-    var xhr = new XMLHttpRequest()
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.status === 200) {
-          var response = JSON.parse(xhr.responseText)
-          showListView.model = response.map(function (item) {
-            return item
-          })
-        } else {
-          console.error("Erro ao buscar shows:", xhr.status, xhr.statusText)
-        }
-      }
-    }
-    xhr.open("GET", "https://api.tvmaze.com/search/shows?q=" + query)
-    xhr.send()
-  }
-
-  function fetchShowDetails(id) {
-    var xhr = new XMLHttpRequest()
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.status === 200) {
-          console.log(xhr.responseText)
-          var response = JSON.parse(xhr.responseText)
-        } else {
-          console.error("Erro ao buscar detalhes do show:", xhr.status,
-                        xhr.statusText)
-        }
-      }
-    }
-    xhr.open("GET", "https://api.tvmaze.com/shows/" + id)
-    xhr.send()
-  }
-
-  Rectangle {
-    id: title
+  Title {
+    id: titleContainer
 
     anchors {
-      top: parent.top
-      left: parent.left
-      right: parent.right
-    }
-
-    height: 80
-    color: "blue"
-
-    Text {
-      text: "Stone Series"
-      anchors.centerIn: parent
-      font.pixelSize: 36
-      color: "white"
+      top: root.top
+      left: root.left
+      right: root.right
     }
   }
 
@@ -67,7 +23,7 @@ Window {
     id: main
 
     anchors {
-      top: title.bottom
+      top: titleContainer.bottom
       bottom: parent.bottom
       left: parent.left
       right: parent.right
@@ -75,41 +31,8 @@ Window {
 
     color: "green"
 
-    Rectangle {
+    SearchBar {
       id: searchContainer
-      color: "red"
-      width: parent.width
-      height: 40
-
-      anchors {
-        left: parent.left
-        right: parent.right
-        margins: 10
-      }
-
-      TextInput {
-        id: searchInput
-
-        anchors.fill: parent
-        verticalAlignment: TextInput.AlignVCenter
-
-        font.pixelSize: 18
-        color: "white"
-        leftPadding: 4
-
-        Button {
-          text: "Pesquisar"
-          anchors.verticalCenter: parent.verticalCenter
-
-          onClicked: {
-            fetchShows(searchInput.text)
-          }
-          anchors {
-            right: parent.right
-            margins: 10
-          }
-        }
-      }
     }
 
     Rectangle {
@@ -183,7 +106,7 @@ Window {
               anchors.fill: parent
               onClicked: {
                 var showUrl = modelData.show.id
-                fetchShowDetails(showUrl)
+                Api.fetchShowDetails(showUrl)
               }
             }
           }
