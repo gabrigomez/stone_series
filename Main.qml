@@ -201,6 +201,8 @@ Window {
 
         anchors {
           top: seriesDetailsImage.bottom
+          topMargin: 10
+          bottomMargin: 10
         }
         text: showDetailsResult.name
         font.pixelSize: 44
@@ -227,16 +229,20 @@ Window {
 
         anchors {
           top: genresRow.bottom
+          topMargin: 10
+          bottomMargin: 10
         }
+
         text: showDetailsResult.rating.average ? +showDetailsResult.rating.average.toString(
                                                    ) + "/10" : "Sem avaliação"
         font.pixelSize: 16
       }
       Text {
         id: seriesDetailsSummary
-
         anchors {
           top: seriesDetailsRating.bottom
+          topMargin: 10
+          bottomMargin: 10
         }
 
         text: showDetailsResult.summary
