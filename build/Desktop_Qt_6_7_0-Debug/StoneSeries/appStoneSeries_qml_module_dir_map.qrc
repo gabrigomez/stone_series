@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/StoneSeries">/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/StoneSeries</file>
-
-  </qresource>
-</RCC>

@@ -11,6 +11,20 @@ Window {
 
   property bool isSearching: false
 
+  Connections {
+    target: searchContainer
+    onSearchStarted: {
+      root.isSearching = true
+    }
+  }
+
+  Connections {
+    target: searchContainer
+    onSearchStopped: {
+      root.isSearching = false
+    }
+  }
+
   Title {
     id: titleContainer
     z: 1
@@ -36,13 +50,6 @@ Window {
     SearchBar {
       z: 1
       id: searchContainer
-    }
-
-    Connections {
-      target: searchContainer
-      onSearchStarted: {
-        root.isSearching = true
-      }
     }
 
     Trending {}
