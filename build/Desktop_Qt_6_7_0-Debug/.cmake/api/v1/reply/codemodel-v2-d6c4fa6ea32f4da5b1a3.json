@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-5d45fcbccb6129f7f618.json",
+					"jsonFile" : "directory-.-Debug-da8d02bd5842c7f5f066.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -92,7 +92,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "appStoneSeries::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-appStoneSeries-Debug-54648517449b966546ea.json",
+					"jsonFile" : "target-appStoneSeries-Debug-042d103d193648040521.json",
 					"name" : "appStoneSeries",
 					"projectIndex" : 0
 				},

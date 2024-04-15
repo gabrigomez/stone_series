@@ -40,13 +40,6 @@ namespace _0x5f_StoneSeries_Trending_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_StoneSeries_ShowDetails_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
 
 }
 namespace {
@@ -66,7 +59,6 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/StoneSeries/SearchBar.qml"), &QmlCacheGeneratedCode::_0x5f_StoneSeries_SearchBar_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/StoneSeries/Api.js"), &QmlCacheGeneratedCode::_0x5f_StoneSeries_Api_js::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/StoneSeries/Trending.qml"), &QmlCacheGeneratedCode::_0x5f_StoneSeries_Trending_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/StoneSeries/ShowDetails.qml"), &QmlCacheGeneratedCode::_0x5f_StoneSeries_ShowDetails_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

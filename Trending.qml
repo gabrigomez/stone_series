@@ -30,8 +30,8 @@ Rectangle {
 
   Rectangle {
     visible: true
-    width: 400
-    height: 400
+    width: root.width
+    height: 900
 
     color: "transparent"
     anchors.horizontalCenter: parent ? parent.horizontalCenter : undefined
@@ -41,17 +41,17 @@ Rectangle {
 
     ListView {
       anchors.fill: parent
-      orientation: ListView.Vertical
+      orientation: Qt.Horizontal
       model: ListModel {
         ListElement {
           showName: "The Office"
-          imageUrl: "https://static.tvmaze.com/uploads/images/medium_portrait/481/1204342.jpg"
+          imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/481/1204342.jpg"
           showRating: 8.5
           id_: 526
         }
         ListElement {
           showName: "Breaking Bad"
-          imageUrl: "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253519.jpg"
+          imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/501/1253519.jpg"
           showRating: 9.2
           id_: 169
         }
@@ -105,20 +105,28 @@ Rectangle {
         }
       }
       delegate: Rectangle {
-        width: parent ? parent.width : undefined
-        height: 400
-        color: "pink"
+        width: 500
+        height: 900
+        color: "gray"
 
         Rectangle {
           Image {
             id: seriesImage
-            sourceSize.width: parent.width / 1.2
-            sourceSize.height: 400
+
+            //sourceSize.width: 900
+            //sourceSize.height: 600
+            sourceSize.width: seriesImage.sourceSize.width
+            sourceSize.height: 650
 
             source: model.imageUrl
           }
+
           Text {
+            anchors {
+              top: seriesImage.bottom
+            }
             text: model.showName
+            font.pixelSize: 44
           }
         }
       }

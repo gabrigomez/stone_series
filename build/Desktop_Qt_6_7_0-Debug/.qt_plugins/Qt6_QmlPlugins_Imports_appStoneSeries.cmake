@@ -1,4 +1,4 @@
-set(qml_import_scanner_imports_count 29)
+set(qml_import_scanner_imports_count 30)
 set(qml_import_scanner_import_0 "CLASSNAME;QtQuick2Plugin;LINKTARGET;Qt6::qtquick2plugin;NAME;QtQuick;PATH;/home/uticket/Downloads/qt/6.7.0/gcc_64/qml/QtQuick;PLUGIN;qtquick2plugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/;RELATIVEPATH;QtQuick;TYPE;module;")
 set(qml_import_scanner_import_1 "CLASSNAME;QtQmlMetaPlugin;LINKTARGET;Qt6::QmlMeta;NAME;QtQml;PATH;/home/uticket/Downloads/qt/6.7.0/gcc_64/qml/QtQml;PLUGIN;qmlmetaplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/;RELATIVEPATH;QtQml;TYPE;module;")
 set(qml_import_scanner_import_2 "CLASSNAME;QtQmlPlugin;LINKTARGET;Qt6::qmlplugin;NAME;QtQml.Base;PATH;/home/uticket/Downloads/qt/6.7.0/gcc_64/qml/QtQml/Base;PLUGIN;qmlplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/Base/;RELATIVEPATH;QtQml/Base;TYPE;module;")
@@ -26,6 +26,7 @@ set(qml_import_scanner_import_23 "CLASSNAME;QtQuickControls2BasicStyleImplPlugin
 set(qml_import_scanner_import_24 "CLASSNAME;QmlShapesPlugin;LINKTARGET;Qt6::qmlshapesplugin;NAME;QtQuick.Shapes;PATH;/home/uticket/Downloads/qt/6.7.0/gcc_64/qml/QtQuick/Shapes;PLUGIN;qmlshapesplugin;PREFER;:/qt-project.org/imports/QtQuick/Shapes/;RELATIVEPATH;QtQuick/Shapes;TYPE;module;")
 set(qml_import_scanner_import_25 "NAME;Api.js;PATH;/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/StoneSeries/Main.qml/Api.js;TYPE;javascript;")
 set(qml_import_scanner_import_26 "NAME;Api.js;PATH;/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/StoneSeries/SearchBar.qml/Api.js;TYPE;javascript;")
-set(qml_import_scanner_import_27 "NAME;Api.js;PATH;/home/uticket/StoneSeries/Main.qml/Api.js;TYPE;javascript;")
-set(qml_import_scanner_import_28 "NAME;Api.js;PATH;/home/uticket/StoneSeries/SearchBar.qml/Api.js;TYPE;javascript;")
+set(qml_import_scanner_import_27 "NAME;Api.js;PATH;/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/StoneSeries/ShowDetails.qml/Api.js;TYPE;javascript;")
+set(qml_import_scanner_import_28 "NAME;Api.js;PATH;/home/uticket/StoneSeries/Main.qml/Api.js;TYPE;javascript;")
+set(qml_import_scanner_import_29 "NAME;Api.js;PATH;/home/uticket/StoneSeries/SearchBar.qml/Api.js;TYPE;javascript;")
 

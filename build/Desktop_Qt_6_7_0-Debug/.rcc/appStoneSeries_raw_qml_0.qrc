@@ -5,7 +5,6 @@
     <file alias="SearchBar.qml">/home/uticket/StoneSeries/SearchBar.qml</file>
     <file alias="Api.js">/home/uticket/StoneSeries/Api.js</file>
     <file alias="Trending.qml">/home/uticket/StoneSeries/Trending.qml</file>
-    <file alias="ShowDetails.qml">/home/uticket/StoneSeries/ShowDetails.qml</file>
   </qresource>
 </RCC>
 
