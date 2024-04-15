@@ -5,23 +5,23 @@ import "Api.js" as Api
 Rectangle {
   id: searchContainer
   property bool isSearching: false
-
   signal searchStarted
   signal searchStopped
 
   height: 40
+  color: "#99d98c"
+  border.color: "black"
 
-  x: 40
-
-  width: parent.width / 2
+  width: parent.width / 3
   TextInput {
     id: searchInput
 
     anchors.fill: parent
     verticalAlignment: TextInput.AlignVCenter
     font.pixelSize: 18
-    color: "black"
-    leftPadding: 4
+    leftPadding: 6
+
+    color: "white"
 
     onTextChanged: {
       if (text === "") {

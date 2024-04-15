@@ -8,6 +8,8 @@ Rectangle {
   height: 80
   color: "#99d98c"
 
+  border.color: "black"
+
   Text {
     text: "Stone Series"
     anchors.centerIn: parent
