@@ -94,7 +94,7 @@ Window {
         delegate: Rectangle {
           width: 500
           height: 900
-          color: "gray"
+          color: "transparent"
 
           Rectangle {
             Image {

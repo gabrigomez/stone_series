@@ -11,6 +11,11 @@ Rectangle {
     top: searchContainer.bottom
   }
 
+  FontLoader {
+    id: webFont
+    source: "https://www.1001fonts.com/download/font/uni-sans.heavy-italic-caps.otf"
+  }
+
   Rectangle {
     id: trendingTitleContainer
     width: parent.width
@@ -46,87 +51,98 @@ Rectangle {
         ListElement {
           showName: "The Office"
           imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/481/1204342.jpg"
-          showRating: 8.5
+          rating: 8.5
           id_: 526
         }
         ListElement {
           showName: "Breaking Bad"
           imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/501/1253519.jpg"
-          showRating: 9.2
+          rating: 9.2
           id_: 169
         }
         ListElement {
           showName: "The Big Bang Theory"
-          imageUrl: "https://static.tvmaze.com/uploads/images/medium_portrait/173/433868.jpg"
-          showRating: 8
+          imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/173/433868.jpg"
+          rating: 8
           id_: 66
         }
         ListElement {
           showName: "The Walking Dead"
-          imageUrl: "https://static.tvmaze.com/uploads/images/medium_portrait/424/1061900.jpg"
-          showRating: 8
+          imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/424/1061900.jpg"
+          rating: 8
           id_: 73
         }
         ListElement {
           showName: "Stranger Things"
-          imageUrl: "https://static.tvmaze.com/uploads/images/medium_portrait/396/991288.jpg"
-          showRating: 8.5
+          imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/396/991288.jpg"
+          rating: 8.5
           id_: 2993
         }
         ListElement {
           showName: "Loki"
-          imageUrl: "https://static.tvmaze.com/uploads/images/medium_portrait/478/1195717.jpg"
-          showRating: 8
+          imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/478/1195717.jpg"
+          rating: 8
           id_: 41007
         }
         ListElement {
           showName: "Game of Thrones"
-          imageUrl: "https://static.tvmaze.com/uploads/images/medium_portrait/498/1245274.jpg"
-          showRating: 8.9
+          imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/498/1245274.jpg"
+          rating: 8.9
           id_: 82
         }
         ListElement {
           showName: "The Last of Us"
-          imageUrl: "https://static.tvmaze.com/uploads/images/medium_portrait/501/1253495.jpg"
-          showRating: 8.2
+          imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/501/1253495.jpg"
+          rating: 8.2
           id_: 46562
         }
         ListElement {
           showName: "House of Dragons"
-          imageUrl: "https://static.tvmaze.com/uploads/images/medium_portrait/509/1274602.jpg"
-          showRating: 7.7
+          imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/509/1274602.jpg"
+          rating: 7.7
           id_: 44778
         }
         ListElement {
           showName: "The Boys"
-          imageUrl: "https://static.tvmaze.com/uploads/images/medium_portrait/505/1263296.jpg"
-          showRating: 8.4
+          imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/505/1263296.jpg"
+          rating: 8.4
           id_: 15299
         }
       }
       delegate: Rectangle {
-        width: 500
+        width: 650
         height: 900
-        color: "gray"
+        color: "transparent"
 
         Rectangle {
           Image {
             id: seriesImage
 
-            //sourceSize.width: 900
             //sourceSize.height: 600
-            sourceSize.width: seriesImage.sourceSize.width
+            //sourceSize.width: seriesImage.sourceSize.width
+            sourceSize.width: 650
             sourceSize.height: 650
 
             source: model.imageUrl
           }
 
-          Text {
-            anchors {
-              top: seriesImage.bottom
+          Row {
+            anchors.top: seriesImage.bottom
+            spacing: 20
+
+            Text {
+              color: "#99d98c"
+              text: model.showName
+              font.family: webFont.font.family
+              font.pixelSize: 30
             }
-            text: model.showName
-            font.pixelSize: 44
+
+            Text {
+              color: "#99d98c"
+              text: model.rating
+              font.family: webFont.font.family
+              font.pixelSize: 30
+            }
           }
         }
         MouseArea {
