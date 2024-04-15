@@ -19,7 +19,7 @@ Rectangle {
   Rectangle {
     id: trendingTitleContainer
     width: parent.width
-    height: 100
+    height: 80
     color: "#1B263B"
     z: 1
 
@@ -28,7 +28,7 @@ Rectangle {
       color: "white"
       anchors.centerIn: parent
       text: "Em alta"
-      font.pixelSize: 44
+      font.pixelSize: 40
       font.bold: true
     }
   }
@@ -126,28 +126,32 @@ Rectangle {
             source: model.imageUrl
           }
 
-          Row {
-            anchors.top: seriesImage.bottom
-            spacing: 20
-
-            Text {
-              color: "#99d98c"
-              text: model.showName
-              font.family: webFont.font.family
-              font.pixelSize: 30
+          Text {
+            id: trendingShowTitle
+            anchors {
+              top: seriesImage.bottom
             }
 
-            Text {
-              color: "#99d98c"
-              text: model.rating
-              font.family: webFont.font.family
-              font.pixelSize: 30
+            color: "white"
+            text: model.showName
+            font.family: webFont.font.family
+            font.pixelSize: 40
+          }
+
+          Text {
+            anchors {
+              top: trendingShowTitle.bottom
             }
+            color: "#99d98c"
+            text: model.rating
+            font.family: webFont.font.family
+            font.pixelSize: 26
           }
         }
         MouseArea {
           anchors.fill: parent
           onClicked: {
+            console.log(showDetailsResult)
             var showUrl = model.id_
             Api.fetchShowDetails(showUrl, function (result) {
               showDetailsResult = result
@@ -160,7 +164,6 @@ Rectangle {
     }
     ShowDetails {
       id: showDetails
-      title: "Voltar"
       anchors {
         top: searchContainer.bottom
         bottom: parent.bottom

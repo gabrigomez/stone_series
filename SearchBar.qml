@@ -9,8 +9,8 @@ Rectangle {
   signal searchStopped
 
   height: 40
-  color: "#99d98c"
-  border.color: "black"
+  color: "#0D1B2A"
+  border.color: "white"
 
   width: parent.width / 3
   TextInput {
@@ -32,8 +32,7 @@ Rectangle {
 
     Image {
       anchors.verticalCenter: parent.verticalCenter
-
-      source: !isSearching ? "https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" : 'https://cdn-icons-png.flaticon.com/512/106/106830.png'
+      source: !isSearching ? "https://static-00.iconduck.com/assets.00/search-icon-256x256-v6gfhlc1.png" : 'https://static.vecteezy.com/system/resources/previews/018/887/460/original/signs-close-icon-png.png'
       height: 20
       width: 20
 

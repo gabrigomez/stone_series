@@ -88,9 +88,6 @@ Window {
           fill: parent
         }
 
-        //model: ListModel {
-        //id: showModel
-        //}
         delegate: Rectangle {
           width: 500
           height: 900
@@ -148,7 +145,6 @@ Window {
 
   ShowDetails {
     id: showDetails
-    title: "Voltar"
     anchors {
       top: searchContainer.bottom
       bottom: parent.bottom

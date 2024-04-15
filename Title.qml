@@ -5,7 +5,7 @@ Rectangle {
   id: title
 
   width: parent.width
-  height: 80
+  height: 60
   color: "#99d98c"
 
   border.color: "black"
