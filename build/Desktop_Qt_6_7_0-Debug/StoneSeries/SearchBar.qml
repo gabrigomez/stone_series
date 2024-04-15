@@ -4,16 +4,18 @@ import "Api.js" as Api
 
 Rectangle {
   id: searchContainer
-
   signal searchStarted
 
-  width: parent.width
-  height: 40
+  height: 35
+  border.color: "gray"
+  opacity: 10
+
+  color: "#0D1B2A"
 
   anchors {
     left: parent.left
     right: parent.right
-    margins: 10
+    margins: 4
   }
 
   TextInput {
@@ -22,7 +24,7 @@ Rectangle {
     anchors.fill: parent
     verticalAlignment: TextInput.AlignVCenter
     font.pixelSize: 18
-    color: "black"
+    color: "white"
     leftPadding: 4
 
     Button {

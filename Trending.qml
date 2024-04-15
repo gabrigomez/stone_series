@@ -14,7 +14,7 @@ Rectangle {
   Rectangle {
     id: trendingTitleContainer
     width: parent.width
-    height: parent.height
+    height: 100
     color: "#1B263B"
     z: 1
 
