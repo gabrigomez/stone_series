@@ -129,6 +129,25 @@ Rectangle {
             font.pixelSize: 44
           }
         }
+        MouseArea {
+          anchors.fill: parent
+          onClicked: {
+            var showUrl = model.id_
+            Api.fetchShowDetails(showUrl, function (result) {
+              showDetailsResult = result
+              console.log(showDetailsResult.image.original)
+            })
+            openDetails = true
+          }
+        }
+      }
+    }
+    ShowDetails {
+      id: showDetails
+      title: "Voltar"
+      anchors {
+        top: searchContainer.bottom
+        bottom: parent.bottom
       }
     }
   }

@@ -12,5 +12,6 @@
 /home/uticket/StoneSeries/SearchBar.qml
 /home/uticket/StoneSeries/Api.js
 /home/uticket/StoneSeries/Trending.qml
+/home/uticket/StoneSeries/ShowDetails.qml
 --json
 /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/appStoneSeries_qmllint.json

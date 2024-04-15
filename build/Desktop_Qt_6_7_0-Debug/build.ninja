@@ -47,7 +47,7 @@ cmake_ninja_workdir = /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/
 #############################################
 # Order-only phony target for appStoneSeries
 
-build cmake_object_order_depends_target_appStoneSeries: phony || .rcc/qmlcache/appStoneSeries_Api_js.cpp .rcc/qmlcache/appStoneSeries_Main_qml.cpp .rcc/qmlcache/appStoneSeries_SearchBar_qml.cpp .rcc/qmlcache/appStoneSeries_Title_qml.cpp .rcc/qmlcache/appStoneSeries_Trending_qml.cpp .rcc/qmlcache/appStoneSeries_qmlcache_loader.cpp .rcc/qrc_appStoneSeries_raw_qml_0.cpp .rcc/qrc_qmake_StoneSeries.cpp StoneSeries/appStoneSeries.qmltypes appStoneSeries_autogen appStoneSeries_autogen/mocs_compilation.cpp appStoneSeries_autogen/timestamp appStoneSeries_autogen_timestamp_deps appStoneSeries_qmlimportscan appStoneSeries_tooling appstoneseries_qmltyperegistrations.cpp meta_types/appStoneSeries_json_file_list.txt meta_types/appStoneSeries_json_file_list.txt.timestamp meta_types/qt6appstoneseries_debug_metatypes.json meta_types/qt6appstoneseries_debug_metatypes.json.gen
+build cmake_object_order_depends_target_appStoneSeries: phony || .rcc/qmlcache/appStoneSeries_Api_js.cpp .rcc/qmlcache/appStoneSeries_Main_qml.cpp .rcc/qmlcache/appStoneSeries_SearchBar_qml.cpp .rcc/qmlcache/appStoneSeries_ShowDetails_qml.cpp .rcc/qmlcache/appStoneSeries_Title_qml.cpp .rcc/qmlcache/appStoneSeries_Trending_qml.cpp .rcc/qmlcache/appStoneSeries_qmlcache_loader.cpp .rcc/qrc_appStoneSeries_raw_qml_0.cpp .rcc/qrc_qmake_StoneSeries.cpp StoneSeries/appStoneSeries.qmltypes appStoneSeries_autogen appStoneSeries_autogen/mocs_compilation.cpp appStoneSeries_autogen/timestamp appStoneSeries_autogen_timestamp_deps appStoneSeries_qmlimportscan appStoneSeries_tooling appstoneseries_qmltyperegistrations.cpp meta_types/appStoneSeries_json_file_list.txt meta_types/appStoneSeries_json_file_list.txt.timestamp meta_types/qt6appstoneseries_debug_metatypes.json meta_types/qt6appstoneseries_debug_metatypes.json.gen
 
 build CMakeFiles/appStoneSeries.dir/appStoneSeries_autogen/mocs_compilation.cpp.o: CXX_COMPILER__appStoneSeries_unscanned_Debug /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/appStoneSeries_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_appStoneSeries
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB
@@ -129,6 +129,14 @@ build CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/a
   OBJECT_DIR = CMakeFiles/appStoneSeries.dir
   OBJECT_FILE_DIR = CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache
 
+build CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_ShowDetails_qml.cpp.o: CXX_COMPILER__appStoneSeries_unscanned_Debug /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_ShowDetails_qml.cpp || cmake_object_order_depends_target_appStoneSeries
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB
+  DEP_FILE = CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_ShowDetails_qml.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/appStoneSeries_autogen/include -I/home/uticket/StoneSeries -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtQml/6.7.0 -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtQml/6.7.0/QtQml -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtCore/6.7.0 -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtCore/6.7.0/QtCore -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtCore -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/mkspecs/linux-g++ -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtQmlBuiltins/6.7.0 -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtQmlBuiltins/6.7.0/QtQmlBuiltins -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtQmlBuiltins -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtQml -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtQmlIntegration -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtNetwork -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtQuick -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtGui -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtQmlModels -isystem /home/uticket/Downloads/qt/6.7.0/gcc_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles/appStoneSeries.dir
+  OBJECT_FILE_DIR = CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache
+
 build CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_appStoneSeries_raw_qml_0.cpp.o: CXX_COMPILER__appStoneSeries_unscanned_Debug /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_appStoneSeries_raw_qml_0.cpp || cmake_object_order_depends_target_appStoneSeries
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB
   DEP_FILE = CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_appStoneSeries_raw_qml_0.cpp.o.d
@@ -145,7 +153,7 @@ build CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_appSto
 #############################################
 # Link the executable appStoneSeries
 
-build appStoneSeries: CXX_EXECUTABLE_LINKER__appStoneSeries_Debug CMakeFiles/appStoneSeries.dir/appStoneSeries_autogen/mocs_compilation.cpp.o CMakeFiles/appStoneSeries.dir/main.cpp.o CMakeFiles/appStoneSeries.dir/appstoneseries_qmltyperegistrations.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_qmake_StoneSeries.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_qmlcache_loader.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Main_qml.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Title_qml.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_SearchBar_qml.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Api_js.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Trending_qml.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_appStoneSeries_raw_qml_0.cpp.o | /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Quick.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6QmlModels.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Qml.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6QmlBuiltins.a /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Network.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6OpenGL.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Gui.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Core.so.6.7.0 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || appStoneSeries_autogen appStoneSeries_autogen_timestamp_deps appStoneSeries_qmlimportscan appStoneSeries_tooling
+build appStoneSeries: CXX_EXECUTABLE_LINKER__appStoneSeries_Debug CMakeFiles/appStoneSeries.dir/appStoneSeries_autogen/mocs_compilation.cpp.o CMakeFiles/appStoneSeries.dir/main.cpp.o CMakeFiles/appStoneSeries.dir/appstoneseries_qmltyperegistrations.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_qmake_StoneSeries.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_qmlcache_loader.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Main_qml.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Title_qml.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_SearchBar_qml.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Api_js.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_Trending_qml.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_ShowDetails_qml.cpp.o CMakeFiles/appStoneSeries.dir/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_appStoneSeries_raw_qml_0.cpp.o | /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Quick.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6QmlModels.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Qml.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6QmlBuiltins.a /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Network.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6OpenGL.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Gui.so.6.7.0 /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Core.so.6.7.0 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || appStoneSeries_autogen appStoneSeries_autogen_timestamp_deps appStoneSeries_qmlimportscan appStoneSeries_tooling
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = -Wl,-rpath,/home/uticket/Downloads/qt/6.7.0/gcc_64/lib:  /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Quick.so.6.7.0  /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6QmlModels.so.6.7.0  /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Qml.so.6.7.0  /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6QmlBuiltins.a  /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Network.so.6.7.0  /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6OpenGL.so.6.7.0  /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Gui.so.6.7.0  /home/uticket/Downloads/qt/6.7.0/gcc_64/lib/libQt6Core.so.6.7.0  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so
   OBJECT_DIR = CMakeFiles/appStoneSeries.dir
@@ -206,7 +214,7 @@ build all_qmllint_module: phony appStoneSeries_qmllint_module
 #############################################
 # Utility command for appStoneSeries_tooling
 
-build appStoneSeries_tooling: phony StoneSeries/Main.qml StoneSeries/Title.qml StoneSeries/SearchBar.qml StoneSeries/Api.js StoneSeries/Trending.qml
+build appStoneSeries_tooling: phony StoneSeries/Main.qml StoneSeries/Title.qml StoneSeries/SearchBar.qml StoneSeries/Api.js StoneSeries/Trending.qml StoneSeries/ShowDetails.qml
 
 
 #############################################
@@ -375,9 +383,18 @@ build .rcc/qmlcache/appStoneSeries_Trending_qml.cpp | ${cmake_ninja_workdir}.rcc
 
 
 #############################################
+# Custom command for .rcc/qmlcache/appStoneSeries_ShowDetails_qml.cpp
+
+build .rcc/qmlcache/appStoneSeries_ShowDetails_qml.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/appStoneSeries_ShowDetails_qml.cpp: CUSTOM_COMMAND /home/uticket/Downloads/qt/6.7.0/gcc_64/libexec/qmlcachegen /home/uticket/StoneSeries/ShowDetails.qml .rcc/qmake_StoneSeries.qrc .rcc/appStoneSeries_raw_qml_0.qrc StoneSeries/appStoneSeries.qmltypes StoneSeries/qmldir || appStoneSeries_autogen appStoneSeries_autogen_timestamp_deps appStoneSeries_qmlimportscan appStoneSeries_tooling
+  COMMAND = cd /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug && /home/uticket/Downloads/qt/Tools/CMake/bin/cmake -E make_directory /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache && /home/uticket/Downloads/qt/6.7.0/gcc_64/./libexec/qmlcachegen --bare --resource-path /StoneSeries/ShowDetails.qml -I /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug -I /home/uticket/Downloads/qt/6.7.0/gcc_64/./qml -i /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/StoneSeries/qmldir --resource /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmake_StoneSeries.qrc --resource /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/appStoneSeries_raw_qml_0.qrc -o /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmlcache/appStoneSeries_ShowDetails_qml.cpp /home/uticket/StoneSeries/ShowDetails.qml
+  DESC = Generating .rcc/qmlcache/appStoneSeries_ShowDetails_qml.cpp
+  restat = 1
+
+
+#############################################
 # Custom command for .rcc/qrc_appStoneSeries_raw_qml_0.cpp
 
-build .rcc/qrc_appStoneSeries_raw_qml_0.cpp | ${cmake_ninja_workdir}.rcc/qrc_appStoneSeries_raw_qml_0.cpp: CUSTOM_COMMAND /home/uticket/StoneSeries/Main.qml /home/uticket/StoneSeries/Title.qml /home/uticket/StoneSeries/SearchBar.qml /home/uticket/StoneSeries/Api.js /home/uticket/StoneSeries/Trending.qml .rcc/appStoneSeries_raw_qml_0.qrc /home/uticket/Downloads/qt/6.7.0/gcc_64/./libexec/rcc || appStoneSeries_autogen appStoneSeries_autogen_timestamp_deps appStoneSeries_qmlimportscan appStoneSeries_tooling
+build .rcc/qrc_appStoneSeries_raw_qml_0.cpp | ${cmake_ninja_workdir}.rcc/qrc_appStoneSeries_raw_qml_0.cpp: CUSTOM_COMMAND /home/uticket/StoneSeries/Main.qml /home/uticket/StoneSeries/Title.qml /home/uticket/StoneSeries/SearchBar.qml /home/uticket/StoneSeries/Api.js /home/uticket/StoneSeries/Trending.qml /home/uticket/StoneSeries/ShowDetails.qml .rcc/appStoneSeries_raw_qml_0.qrc /home/uticket/Downloads/qt/6.7.0/gcc_64/./libexec/rcc || appStoneSeries_autogen appStoneSeries_autogen_timestamp_deps appStoneSeries_qmlimportscan appStoneSeries_tooling
   COMMAND = cd /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug && /home/uticket/Downloads/qt/6.7.0/gcc_64/./libexec/rcc --output /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qrc_appStoneSeries_raw_qml_0.cpp --name appStoneSeries_raw_qml_0 /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/appStoneSeries_raw_qml_0.qrc
   DESC = Running rcc for resource appStoneSeries_raw_qml_0
   restat = 1
@@ -411,21 +428,21 @@ build CMakeFiles/appStoneSeries_qmltyperegistration | ${cmake_ninja_workdir}CMak
 #############################################
 # Custom command for CMakeFiles/appStoneSeries_qmllint
 
-build CMakeFiles/appStoneSeries_qmllint | ${cmake_ninja_workdir}CMakeFiles/appStoneSeries_qmllint: CUSTOM_COMMAND /home/uticket/Downloads/qt/6.7.0/gcc_64/bin/qmllint /home/uticket/StoneSeries/Main.qml /home/uticket/StoneSeries/Title.qml /home/uticket/StoneSeries/SearchBar.qml /home/uticket/StoneSeries/Api.js /home/uticket/StoneSeries/Trending.qml .rcc/qmllint/appStoneSeries.rsp || all_qmltyperegistrations appStoneSeries_qmltyperegistration
+build CMakeFiles/appStoneSeries_qmllint | ${cmake_ninja_workdir}CMakeFiles/appStoneSeries_qmllint: CUSTOM_COMMAND /home/uticket/Downloads/qt/6.7.0/gcc_64/bin/qmllint /home/uticket/StoneSeries/Main.qml /home/uticket/StoneSeries/Title.qml /home/uticket/StoneSeries/SearchBar.qml /home/uticket/StoneSeries/Api.js /home/uticket/StoneSeries/Trending.qml /home/uticket/StoneSeries/ShowDetails.qml .rcc/qmllint/appStoneSeries.rsp || all_qmltyperegistrations appStoneSeries_qmltyperegistration
   COMMAND = cd /home/uticket/StoneSeries && /home/uticket/Downloads/qt/6.7.0/gcc_64/bin/qmllint @/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmllint/appStoneSeries.rsp
 
 
 #############################################
 # Custom command for CMakeFiles/appStoneSeries_qmllint_json
 
-build CMakeFiles/appStoneSeries_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appStoneSeries_qmllint_json: CUSTOM_COMMAND /home/uticket/Downloads/qt/6.7.0/gcc_64/bin/qmllint /home/uticket/StoneSeries/Main.qml /home/uticket/StoneSeries/Title.qml /home/uticket/StoneSeries/SearchBar.qml /home/uticket/StoneSeries/Api.js /home/uticket/StoneSeries/Trending.qml .rcc/qmllint/appStoneSeries_json.rsp || all_qmltyperegistrations appStoneSeries_qmltyperegistration
+build CMakeFiles/appStoneSeries_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appStoneSeries_qmllint_json: CUSTOM_COMMAND /home/uticket/Downloads/qt/6.7.0/gcc_64/bin/qmllint /home/uticket/StoneSeries/Main.qml /home/uticket/StoneSeries/Title.qml /home/uticket/StoneSeries/SearchBar.qml /home/uticket/StoneSeries/Api.js /home/uticket/StoneSeries/Trending.qml /home/uticket/StoneSeries/ShowDetails.qml .rcc/qmllint/appStoneSeries_json.rsp || all_qmltyperegistrations appStoneSeries_qmltyperegistration
   COMMAND = cd /home/uticket/StoneSeries && /home/uticket/Downloads/qt/6.7.0/gcc_64/bin/qmllint @/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmllint/appStoneSeries_json.rsp
 
 
 #############################################
 # Custom command for CMakeFiles/appStoneSeries_qmllint_module
 
-build CMakeFiles/appStoneSeries_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appStoneSeries_qmllint_module: CUSTOM_COMMAND /home/uticket/Downloads/qt/6.7.0/gcc_64/bin/qmllint /home/uticket/StoneSeries/Main.qml /home/uticket/StoneSeries/Title.qml /home/uticket/StoneSeries/SearchBar.qml /home/uticket/StoneSeries/Api.js /home/uticket/StoneSeries/Trending.qml .rcc/qmllint/appStoneSeries_module.rsp || all_qmltyperegistrations appStoneSeries_qmltyperegistration
+build CMakeFiles/appStoneSeries_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appStoneSeries_qmllint_module: CUSTOM_COMMAND /home/uticket/Downloads/qt/6.7.0/gcc_64/bin/qmllint /home/uticket/StoneSeries/Main.qml /home/uticket/StoneSeries/Title.qml /home/uticket/StoneSeries/SearchBar.qml /home/uticket/StoneSeries/Api.js /home/uticket/StoneSeries/Trending.qml /home/uticket/StoneSeries/ShowDetails.qml .rcc/qmllint/appStoneSeries_module.rsp || all_qmltyperegistrations appStoneSeries_qmltyperegistration
   COMMAND = cd /home/uticket/StoneSeries && /home/uticket/Downloads/qt/6.7.0/gcc_64/bin/qmllint @/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.rcc/qmllint/appStoneSeries_module.rsp
 
 
@@ -475,6 +492,15 @@ build StoneSeries/Trending.qml | ${cmake_ninja_workdir}StoneSeries/Trending.qml:
 
 
 #############################################
+# Custom command for StoneSeries/ShowDetails.qml
+
+build StoneSeries/ShowDetails.qml | ${cmake_ninja_workdir}StoneSeries/ShowDetails.qml: CUSTOM_COMMAND /home/uticket/StoneSeries/ShowDetails.qml
+  COMMAND = cd /home/uticket/StoneSeries && /home/uticket/Downloads/qt/Tools/CMake/bin/cmake -E copy /home/uticket/StoneSeries/ShowDetails.qml /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/StoneSeries/ShowDetails.qml
+  DESC = Copying ShowDetails.qml to /home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/StoneSeries/ShowDetails.qml
+  restat = 1
+
+
+#############################################
 # Phony custom command for CMakeFiles/appStoneSeries_qmlimportscan
 
 build CMakeFiles/appStoneSeries_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles/appStoneSeries_qmlimportscan: phony .qt_plugins/Qt6_QmlPlugins_Imports_appStoneSeries.cmake
@@ -483,7 +509,7 @@ build CMakeFiles/appStoneSeries_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles
 #############################################
 # Custom command for .qt_plugins/Qt6_QmlPlugins_Imports_appStoneSeries.cmake
 
-build .qt_plugins/Qt6_QmlPlugins_Imports_appStoneSeries.cmake | ${cmake_ninja_workdir}.qt_plugins/Qt6_QmlPlugins_Imports_appStoneSeries.cmake: CUSTOM_COMMAND /home/uticket/Downloads/qt/6.7.0/gcc_64/libexec/qmlimportscanner .rcc/qmake_StoneSeries.qrc .rcc/appStoneSeries_raw_qml_0.qrc /home/uticket/StoneSeries/Main.qml /home/uticket/StoneSeries/Title.qml /home/uticket/StoneSeries/SearchBar.qml /home/uticket/StoneSeries/Api.js /home/uticket/StoneSeries/Trending.qml
+build .qt_plugins/Qt6_QmlPlugins_Imports_appStoneSeries.cmake | ${cmake_ninja_workdir}.qt_plugins/Qt6_QmlPlugins_Imports_appStoneSeries.cmake: CUSTOM_COMMAND /home/uticket/Downloads/qt/6.7.0/gcc_64/libexec/qmlimportscanner .rcc/qmake_StoneSeries.qrc .rcc/appStoneSeries_raw_qml_0.qrc /home/uticket/StoneSeries/Main.qml /home/uticket/StoneSeries/Title.qml /home/uticket/StoneSeries/SearchBar.qml /home/uticket/StoneSeries/Api.js /home/uticket/StoneSeries/Trending.qml /home/uticket/StoneSeries/ShowDetails.qml
   COMMAND = cd /home/uticket/StoneSeries && /home/uticket/Downloads/qt/6.7.0/gcc_64/./libexec/qmlimportscanner @/home/uticket/StoneSeries/build/Desktop_Qt_6_7_0-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appStoneSeries.rsp
   DESC = Running qmlimportscanner for appStoneSeries
   restat = 1
