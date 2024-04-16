@@ -81,7 +81,7 @@ Rectangle {
         y: 4
 
         Image {
-          id: seriesDetailsImage
+          id: showDetailsImage
           width: 500
           height: 600
           source: showDetailsResult.image.original
@@ -90,7 +90,7 @@ Rectangle {
         Text {
           id: showDetailsName
           anchors {
-            top: seriesDetailsImage.bottom
+            top: showDetailsImage.bottom
             topMargin: 10
             bottomMargin: 10
           }
@@ -149,8 +149,10 @@ Rectangle {
           wrapMode: Text.Wrap
           font.pixelSize: 16
 
+          clip: true
+          maximumLineCount: 10
           horizontalAlignment: Text.AlignJustify
-          width: seriesDetailsImage.width
+          width: showDetailsImage.width
         }
       }
     }
