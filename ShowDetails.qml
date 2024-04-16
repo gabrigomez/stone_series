@@ -101,6 +101,9 @@ Rectangle {
           styleColor: "black"
           font.family: webFont.font.family
           font.pixelSize: 44
+
+          wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+          width: showDetailsImage.width
         }
 
         Row {
@@ -150,7 +153,7 @@ Rectangle {
           font.pixelSize: 16
 
           clip: true
-          maximumLineCount: 10
+          maximumLineCount: 7
           horizontalAlignment: Text.AlignJustify
           width: showDetailsImage.width
         }
