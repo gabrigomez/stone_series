@@ -122,7 +122,7 @@ Rectangle {
           x: 6
 
           Image {
-            id: seriesImage
+            id: trendingShowImage
             y: 2
             source: model.imageUrl
             width: 500
@@ -132,7 +132,7 @@ Rectangle {
           Rectangle {
             x: 4
             anchors {
-              top: seriesImage.bottom
+              top: trendingShowImage.bottom
               topMargin: 10
             }
             color: "transparent"
@@ -141,9 +141,10 @@ Rectangle {
 
             Text {
               id: trendingShowTitle
-
               color: "white"
               text: model.showName
+              style: Text.Outline
+              styleColor: "black"
               font.family: webFont.font.family
               font.pixelSize: 40
             }
@@ -154,6 +155,8 @@ Rectangle {
               }
               color: "black"
               text: model.rating + "/10"
+              style: Text.Outline
+              styleColor: "white"
               font.family: webFont.font.family
               font.pixelSize: 26
             }
