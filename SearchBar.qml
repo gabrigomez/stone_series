@@ -32,7 +32,6 @@ Rectangle {
     }
 
     Image {
-      anchors.verticalCenter: parent.verticalCenter
       source: !isSearching ? "https://static-00.iconduck.com/assets.00/search-icon-256x256-v6gfhlc1.png" : 'https://static.vecteezy.com/system/resources/previews/018/887/460/original/signs-close-icon-png.png'
       height: 20
       width: 20
@@ -40,6 +39,7 @@ Rectangle {
       anchors {
         right: parent.right
         margins: 10
+        verticalCenter: parent.verticalCenter
       }
 
       MouseArea {

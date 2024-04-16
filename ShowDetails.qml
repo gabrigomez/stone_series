@@ -2,9 +2,17 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 
-Item {
+Rectangle {
   id: showDetailsRoot
-  z: 3
+  visible: openDetails
+  color: "black"
+  width: root.width
+  height: root.height
+
+  anchors {
+    top: root.top
+    bottom: root.bottom
+  }
 
   FontLoader {
     id: webFont
@@ -12,118 +20,137 @@ Item {
   }
 
   Rectangle {
-    id: showDetails
-    visible: openDetails
-    x: root.x
-    y: root.y
-    z: 3
-    height: root.height
-    width: root.width
-    color: "#1B263B"
+    id: closeButton
+    y: 20
+    x: 10
+    z: 2
 
-    anchors {
-      top: searchContainer.bottom
-      bottom: parent.bottom
+    width: 50
+    height: 50
+    radius: 25
+
+    Image {
+      source: "https://static.thenounproject.com/png/1165042-200.png"
+      height: 25
+      width: 25
+
+      anchors {
+        right: parent.right
+        margins: 10
+        verticalCenter: parent.verticalCenter
+        horizontalCenter: parent.horizontalCenter
+      }
     }
 
-    Button {
-      id: closeButton
-
-      width: 100
-      height: 30
-
-      Text {
-        color: "black"
-        text: "← Voltar"
-      }
-
+    MouseArea {
+      anchors.fill: parent
       onClicked: {
         openDetails = false
         isSearching = false
         showDetailsResult = {}
       }
     }
+  }
+
+  Rectangle {
+    id: showDetailsCard
+    anchors {
+      top: root.top
+      topMargin: 10
+    }
+    color: "transparent"
+    width: root.width
+    height: root.height
 
     Rectangle {
-      width: root.width
-      height: 900
-      color: "transparent"
-
+      color: "#08FF5B"
       anchors {
-        top: closeButton.bottom
+        horizontalCenter: showDetailsCard.horizontalCenter
       }
 
-      Image {
-        id: seriesDetailsImage
+      border.color: "white"
+      border.width: 2
+      bottomRightRadius: 20
+      bottomLeftRadius: 20
 
-        sourceSize.width: 600
-        sourceSize.height: 650
-        source: showDetailsResult.image.original
-      }
+      width: 512
+      height: 920
 
       Rectangle {
-        x: 4
-        anchors.top: seriesDetailsImage.bottom
+        x: 6
+        y: 4
+
+        Image {
+          id: seriesDetailsImage
+          width: 500
+          height: 600
+          source: showDetailsResult.image.original
+        }
 
         Text {
-          id: seriesDetailsName
-          color: "white"
-          font.family: webFont.font.family
-
+          id: showDetailsName
           anchors {
             top: seriesDetailsImage.bottom
             topMargin: 10
             bottomMargin: 10
           }
+
           text: showDetailsResult.name
+          color: "white"
+          style: Text.Outline
+          styleColor: "black"
+          font.family: webFont.font.family
           font.pixelSize: 44
         }
+
         Row {
-          id: genresRow
-          anchors.top: seriesDetailsName.bottom
+          id: showGenresRow
+          anchors.top: showDetailsName.bottom
           spacing: 2
 
           Repeater {
-            id: genresRepeater
+            id: showGenresRepeater
             model: showDetailsResult.genres
             Text {
-              text: modelData + (index < genresRepeater.count - 1 ? ", " : "")
+              text: modelData + (index < showGenresRepeater.count - 1 ? ", " : "")
+              color: "black"
               font.pixelSize: 24
-              color: "white"
               wrapMode: Text.Wrap
             }
           }
         }
+
         Text {
           id: seriesDetailsRating
-          color: "white"
-
           anchors {
-            top: genresRow.bottom
+            top: showGenresRow.bottom
             topMargin: 10
             bottomMargin: 10
           }
 
           text: showDetailsResult.rating.average ? +showDetailsResult.rating.average.toString(
                                                      ) + "/10" : "Sem avaliação"
+          color: "white"
+          style: Text.Outline
+          styleColor: "black"
+          font.family: webFont.font.family
           font.pixelSize: 16
         }
+
         Text {
-          id: seriesDetailsSummary
+          id: showDetailsSummary
           anchors {
             top: seriesDetailsRating.bottom
             topMargin: 10
             bottomMargin: 10
           }
-
-          width: seriesDetailsImage.width
-
           text: showDetailsResult.summary
-
+          color: "black"
           wrapMode: Text.Wrap
-          color: "white"
           font.pixelSize: 16
+
           horizontalAlignment: Text.AlignJustify
+          width: seriesDetailsImage.width
         }
       }
     }
