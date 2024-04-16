@@ -5,6 +5,7 @@ Rectangle {
   id: trendingContainer
   width: parent.width
   height: 40
+  color: "black"
 
   visible: !isSearching
   anchors {
@@ -18,15 +19,16 @@ Rectangle {
 
   Rectangle {
     id: trendingTitleContainer
-    y: 2
+    y: 6
     color: "#08FF5B"
     height: 80
+    border.color: "white"
     width: parent.width
 
     Text {
       id: trendingTitle
-      color: "white"
       anchors.centerIn: parent
+      color: "white"
       text: "Em alta"
       font.pixelSize: 40
       font.bold: true

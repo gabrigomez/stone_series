@@ -10,7 +10,7 @@ Rectangle {
 
   height: 40
   color: "#0D1B2A"
-  border.color: "white"
+  border.color: "gray"
   width: parent.width / 3
 
   TextInput {
@@ -21,7 +21,6 @@ Rectangle {
     font.pixelSize: 18
     leftPadding: 4
     rightPadding: 40
-
     color: "white"
 
     onTextChanged: {
