@@ -9,6 +9,8 @@ Window {
   height: 1000
   visible: true
 
+  color: "black"
+
   property bool isSearching: false
   property bool openDetails: false
   property var showDetailsResult
@@ -39,7 +41,7 @@ Window {
       right: parent.right
     }
 
-    color: "#0D1B2A"
+    color: "black"
     SearchBar {
       id: searchContainer
       z: 1

@@ -19,7 +19,7 @@ Rectangle {
   Rectangle {
     id: trendingTitleContainer
     y: 2
-    color: "#3f80c3"
+    color: "#08FF5B"
     height: 80
     width: parent.width
 
@@ -109,7 +109,7 @@ Rectangle {
 
       delegate: Rectangle {
         id: trendingShowsCards
-        color: "#228cdb"
+        color: "#08FF5B"
         border.color: "white"
         border.width: 2
         bottomRightRadius: 20
@@ -152,8 +152,8 @@ Rectangle {
               anchors {
                 top: trendingShowTitle.bottom
               }
-              color: "#99d98c"
-              text: model.rating
+              color: "black"
+              text: model.rating + "/10"
               font.family: webFont.font.family
               font.pixelSize: 26
             }
