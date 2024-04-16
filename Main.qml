@@ -29,21 +29,11 @@ Window {
     }
   }
 
-  Title {
-    id: titleContainer
-    z: 1
-    anchors {
-      top: root.top
-      left: root.left
-      right: root.right
-    }
-  }
-
   Rectangle {
     id: main
 
     anchors {
-      top: titleContainer.bottom
+      top: parent.top
       bottom: parent.bottom
       left: parent.left
       right: parent.right
@@ -55,6 +45,8 @@ Window {
       id: searchContainer
       z: 1
     }
+
+    Title {}
 
     Trending {}
 

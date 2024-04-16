@@ -11,15 +11,16 @@ Rectangle {
   height: 40
   color: "#0D1B2A"
   border.color: "white"
-
   width: parent.width / 3
+
   TextInput {
     id: searchInput
 
     anchors.fill: parent
     verticalAlignment: TextInput.AlignVCenter
     font.pixelSize: 18
-    leftPadding: 6
+    leftPadding: 4
+    rightPadding: 40
 
     color: "white"
 
