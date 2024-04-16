@@ -7,7 +7,7 @@ Rectangle {
   height: 40
   color: "black"
 
-  visible: !isSearching
+  visible: !isSearching && !busy
   anchors {
     top: searchContainer.bottom
   }

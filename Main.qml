@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
+import QtQuick.Controls.Material 2.12
 import "Api.js" as Api
 
 Window {
@@ -13,6 +14,8 @@ Window {
   property bool openDetails: false
   property var showDetailsResult
   property var showId
+  property bool busy: false
+  property bool noResults: false
 
   FontLoader {
     id: webFont
@@ -52,6 +55,15 @@ Window {
 
     Trending {}
 
+    BusyIndicator {
+      id: busyIndicator
+      visible: busy
+      anchors.centerIn: parent
+      width: 281
+      height: 281
+      Material.accent: "#08FF5B"
+    }
+
     Rectangle {
       id: searchResults
       anchors {
@@ -60,7 +72,7 @@ Window {
         bottom: parent.bottom
       }
 
-      visible: isSearching && !openDetails
+      visible: isSearching && !openDetails && !busy
       opacity: visible ? 1 : 0
 
       height: root.height
@@ -73,8 +85,16 @@ Window {
         }
       }
 
+      NoResults {
+        visible: noResults
+        anchors.centerIn: parent
+        width: 281
+        height: 281
+      }
+
       ListView {
         id: showListView
+        visible: !noResults
         anchors {
           fill: parent
         }

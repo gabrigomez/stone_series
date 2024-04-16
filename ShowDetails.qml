@@ -4,7 +4,7 @@ import QtQuick.Controls
 
 Rectangle {
   id: showDetailsRoot
-  visible: openDetails
+  visible: openDetails && !busy
   color: "black"
   width: root.width
   height: root.height
