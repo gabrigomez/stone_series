@@ -24,14 +24,14 @@ Window {
 
   Connections {
     target: searchContainer
-    onSearchStarted: {
+    function onSearchStarted() {
       root.isSearching = true
     }
   }
 
   Connections {
     target: searchContainer
-    onSearchStopped: {
+    function onSearchStopped() {
       root.isSearching = false
     }
   }
@@ -162,11 +162,9 @@ Window {
           MouseArea {
             anchors.fill: parent
             onClicked: {
-              console.log(showDetailsResult)
               var showUrl = modelData.show.id
               Api.fetchShowDetails(showUrl, function (result) {
                 showDetailsResult = result
-                console.log(showDetailsResult.image.original)
               })
               openDetails = true
             }
@@ -179,8 +177,8 @@ Window {
   ShowDetails {
     id: showDetails
     anchors {
-      top: searchContainer.bottom
-      bottom: parent.bottom
+      top: root.top
+      bottom: root.bottom
     }
   }
 }

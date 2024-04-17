@@ -31,7 +31,7 @@ Rectangle {
     }
 
     Image {
-      source: !isSearching ? "https://static-00.iconduck.com/assets.00/search-icon-256x256-v6gfhlc1.png" : 'https://static.vecteezy.com/system/resources/previews/018/887/460/original/signs-close-icon-png.png'
+      source: "https://static-00.iconduck.com/assets.00/search-icon-256x256-v6gfhlc1.png"
       height: 20
       width: 20
 
@@ -44,24 +44,17 @@ Rectangle {
       MouseArea {
         anchors.fill: parent
         onClicked: {
-          if (isSearching) {
-            isSearching = false
-            searchInput.text = ""
-            searchStopped()
-          } else {
-            Api.fetchShows(searchInput.text)
-            searchStarted()
-          }
+          Api.fetchShows(searchInput.text)
+          searchStarted()
         }
       }
     }
+  }
 
-    // Adiciona um listener para alterar isSearching quando searchStarted for emitido
-    Connections {
-      target: searchContainer
-      onSearchStarted: {
-        isSearching = true
-      }
+  Connections {
+    target: searchContainer
+    function onSearchStarted() {
+      isSearching = true
     }
   }
 }

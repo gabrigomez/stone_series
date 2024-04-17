@@ -84,7 +84,8 @@ Rectangle {
           id: showDetailsImage
           width: 500
           height: 600
-          source: showDetailsResult.image.original
+          source: showDetailsResult
+                  && showDetailsResult.image ? showDetailsResult.image.original : ''
         }
 
         Text {
@@ -95,7 +96,8 @@ Rectangle {
             bottomMargin: 10
           }
 
-          text: showDetailsResult.name
+          text: showDetailsResult
+                && showDetailsResult.name ? showDetailsResult.name : ''
           color: "white"
           style: Text.Outline
           styleColor: "black"
@@ -113,7 +115,7 @@ Rectangle {
 
           Repeater {
             id: showGenresRepeater
-            model: showDetailsResult.genres
+            model: showDetailsResult ? showDetailsResult.genres : []
             Text {
               text: modelData + (index < showGenresRepeater.count - 1 ? ", " : "")
               color: "black"
@@ -131,8 +133,8 @@ Rectangle {
             bottomMargin: 10
           }
 
-          text: showDetailsResult.rating.average ? +showDetailsResult.rating.average.toString(
-                                                     ) + "/10" : "Sem avaliação"
+          text: showDetailsResult
+                && showDetailsResult.rating ? (showDetailsResult.rating.average ? showDetailsResult.rating.average.toString() + "/10" : "Sem avaliação") : "Sem avaliação"
           color: "white"
           style: Text.Outline
           styleColor: "black"
@@ -147,7 +149,8 @@ Rectangle {
             topMargin: 10
             bottomMargin: 10
           }
-          text: showDetailsResult.summary
+          text: showDetailsResult
+                && showDetailsResult.summary ? showDetailsResult.summary : ''
           color: "black"
           wrapMode: Text.Wrap
           font.pixelSize: 16

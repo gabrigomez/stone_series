@@ -167,11 +167,9 @@ Rectangle {
         MouseArea {
           anchors.fill: parent
           onClicked: {
-            console.log(showDetailsResult)
             var showUrl = model.id_
             Api.fetchShowDetails(showUrl, function (result) {
               showDetailsResult = result
-              console.log(showDetailsResult.image.original)
             })
             openDetails = true
           }
@@ -181,8 +179,8 @@ Rectangle {
     ShowDetails {
       id: showDetails
       anchors {
-        top: searchContainer.bottom
-        bottom: parent.bottom
+        top: root.top
+        bottom: root.bottom
       }
     }
   }
