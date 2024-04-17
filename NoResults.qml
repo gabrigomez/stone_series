@@ -35,6 +35,12 @@ Rectangle {
       }
     }
 
+    Behavior on color {
+      ColorAnimation {
+        duration: 100
+      }
+    }
+
     MouseArea {
       anchors.fill: backButtonContainer
       onClicked: {
@@ -43,6 +49,10 @@ Rectangle {
         isSearching = false
         showDetailsResult = {}
       }
+
+      hoverEnabled: true
+      onEntered: backButtonContainer.color = "gray"
+      onExited: backButtonContainer.color = "white"
     }
   }
 }

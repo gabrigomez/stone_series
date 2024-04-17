@@ -142,6 +142,8 @@ Window {
                 font.family: webFont.font.family
                 font.pixelSize: 40
                 width: searchedShowImage.width
+                maximumLineCount: 2
+                height: 100
               }
 
               Text {

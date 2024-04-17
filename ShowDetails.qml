@@ -42,6 +42,12 @@ Rectangle {
       }
     }
 
+    Behavior on color {
+      ColorAnimation {
+        duration: 100
+      }
+    }
+
     MouseArea {
       anchors.fill: parent
       onClicked: {
@@ -49,6 +55,10 @@ Rectangle {
         isSearching = false
         showDetailsResult = {}
       }
+
+      hoverEnabled: true
+      onEntered: closeButton.color = "#08FF5B"
+      onExited: closeButton.color = "white"
     }
   }
 
@@ -105,7 +115,9 @@ Rectangle {
           font.pixelSize: 44
 
           wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+          maximumLineCount: 2
           width: showDetailsImage.width
+          height: 100
         }
 
         Row {
