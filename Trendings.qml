@@ -2,7 +2,7 @@ import QtQuick
 import QtQuick.Layouts
 
 Rectangle {
-  id: trendingContainer
+  id: trendingsContainer
   width: parent.width
   height: 40
   color: "black"
@@ -18,7 +18,7 @@ Rectangle {
   }
 
   Rectangle {
-    id: trendingTitleContainer
+    id: trendingsTitleContainer
     y: 6
     color: "#08FF5B"
     height: 80
@@ -26,7 +26,7 @@ Rectangle {
     width: parent.width
 
     Text {
-      id: trendingTitle
+      id: trendingsTitle
       anchors.centerIn: parent
       color: "white"
       text: "Em alta"
@@ -110,7 +110,7 @@ Rectangle {
       }
 
       delegate: Rectangle {
-        id: trendingShowsCards
+        id: trendingsShowsCards
         color: "#08FF5B"
         border.color: "white"
         border.width: 2
@@ -124,7 +124,7 @@ Rectangle {
           x: 6
 
           Image {
-            id: trendingShowImage
+            id: trendingsShowImage
             y: 2
             source: model.imageUrl
             width: 500
@@ -134,7 +134,7 @@ Rectangle {
           Rectangle {
             x: 4
             anchors {
-              top: trendingShowImage.bottom
+              top: trendingsShowImage.bottom
               topMargin: 10
             }
             color: "transparent"
@@ -142,7 +142,7 @@ Rectangle {
             height: 100
 
             Text {
-              id: trendingShowTitle
+              id: trendingsShowTitle
               color: "white"
               text: model.showName
               style: Text.Outline
@@ -153,7 +153,7 @@ Rectangle {
 
             Text {
               anchors {
-                top: trendingShowTitle.bottom
+                top: trendingsShowTitle.bottom
               }
               color: "black"
               text: model.rating + "/10"

@@ -53,7 +53,7 @@ Window {
 
     Title {}
 
-    Trending {}
+    Trendings {}
 
     BusyIndicator {
       id: busyIndicator
