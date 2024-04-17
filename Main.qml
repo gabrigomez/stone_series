@@ -106,6 +106,9 @@ Window {
           color: "#08FF5B"
           border.color: "white"
           border.width: 2
+
+          topRightRadius: 5
+          topLeftRadius: 5
           bottomRightRadius: 20
           bottomLeftRadius: 20
 
