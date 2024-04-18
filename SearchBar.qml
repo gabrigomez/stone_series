@@ -53,6 +53,12 @@ Rectangle {
         }
       }
     }
+    Keys.onPressed: (event) => {
+      if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+        Api.fetchShows(searchInput.text)
+        searchStarted()
+      }
+    }
   }
 
   Connections {

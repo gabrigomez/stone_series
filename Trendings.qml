@@ -97,7 +97,7 @@ Rectangle {
           id_: 46562
         }
         ListElement {
-          showName: "House of Dragons"
+          showName: "House of the Dragon"
           imageUrl: "https://static.tvmaze.com/uploads/images/original_untouched/509/1274602.jpg"
           rating: 7.7
           id_: 44778
