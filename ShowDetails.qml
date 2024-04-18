@@ -4,15 +4,15 @@ import QtQuick.Controls
 
 Rectangle {
   id: showDetailsRoot
-  visible: openDetails && !busy
-  color: "black"
-  width: root.width
-  height: root.height
-
   anchors {
     top: root.top
     bottom: root.bottom
   }
+  visible: openDetails && !busy
+  color: "black"
+
+  width: root.width
+  height: root.height
 
   FontLoader {
     id: webFont
@@ -27,12 +27,13 @@ Rectangle {
 
   Rectangle {
     id: showDetailsCard
+    y: 10
     anchors {
       top: root.top
       topMargin: 10
     }
     color: "transparent"
-    y: 10
+
     width: root.width
     height: root.height
 
@@ -58,10 +59,10 @@ Rectangle {
 
         Image {
           id: showDetailsImage
-          width: 500
-          height: 600
           source: showDetailsResult
                   && showDetailsResult.image ? showDetailsResult.image.original : 'https://t3.ftcdn.net/jpg/03/34/83/22/360_F_334832255_IMxvzYRygjd20VlSaIAFZrQWjozQH6BQ.jpg'
+          width: 500
+          height: 600
         }
 
         Text {
@@ -71,9 +72,9 @@ Rectangle {
             topMargin: 10
             bottomMargin: 10
           }
-
           text: showDetailsResult
                 && showDetailsResult.name ? showDetailsResult.name : ''
+
           color: "white"
           style: Text.Outline
           styleColor: "black"
@@ -114,6 +115,7 @@ Rectangle {
           text: showDetailsResult
                 && showDetailsResult.rating ? (showDetailsResult.rating.average ? showDetailsResult.rating.average.toString() + "/10" : "Sem avaliação") : "Sem avaliação"
           color: "white"
+
           style: Text.Outline
           styleColor: "black"
           font.family: webFont.font.family
@@ -130,11 +132,12 @@ Rectangle {
           text: showDetailsResult
                 && showDetailsResult.summary ? showDetailsResult.summary : ''
           color: "black"
+
           wrapMode: Text.Wrap
           font.pixelSize: 16
-
           clip: true
           maximumLineCount: 7
+
           horizontalAlignment: Text.AlignJustify
           width: showDetailsImage.width
         }

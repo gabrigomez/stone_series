@@ -6,14 +6,15 @@ import "Api.js" as Api
 
 Window {
   id: root
+  visible: true
   width: 1600
   height: 1000
-  visible: true
 
-  property bool isSearching: false
-  property bool openDetails: false
-  property var showDetailsResult
   property var showId
+  property var showDetailsResult
+  property bool isSearching: false
+
+  property bool openDetails: false
   property bool busy: false
   property bool noResults: false
 
@@ -95,10 +96,10 @@ Window {
 
       ListView {
         id: showListView
-        visible: !noResults
         anchors {
           fill: parent
         }
+        visible: !noResults
         orientation: Qt.Horizontal
         spacing: 40
 

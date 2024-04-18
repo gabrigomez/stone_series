@@ -6,8 +6,8 @@ Rectangle {
 
   Text {
     id: noResultsMessage
-    text: "Nenhum resultado encontrado."
     anchors.horizontalCenter: parent.horizontalCenter
+    text: "Nenhum resultado encontrado."
     color: "white"
     font.pixelSize: 50
   }

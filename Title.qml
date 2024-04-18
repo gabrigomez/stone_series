@@ -13,10 +13,10 @@ Rectangle {
 
   Image {
     source: "https://cdn-icons-png.flaticon.com/512/1709/1709973.png"
+    y: 12
     anchors.right: parent.right
     anchors.rightMargin: 10
 
-    y: 12
     width: 25
     height: 25
   }

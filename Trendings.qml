@@ -3,14 +3,14 @@ import QtQuick.Layouts
 
 Rectangle {
   id: trendingsContainer
-  width: parent.width
-  height: 40
-  color: "black"
-
   visible: !isSearching && !busy
   anchors {
     top: searchContainer.bottom
   }
+
+  color: "black"
+  width: parent.width
+  height: 40
 
   FontLoader {
     id: webFont
@@ -21,16 +21,16 @@ Rectangle {
     id: trendingsTitleContainer
     y: 6
     color: "#08FF5B"
-    height: 80
     border.color: "white"
+    height: 80
     width: parent.width
 
     Text {
       id: trendingsTitle
       anchors.centerIn: parent
 
-      color: "white"
       text: "Em alta"
+      color: "white"
       font.pixelSize: 40
       font.bold: true
     }

@@ -39,12 +39,14 @@ Rectangle {
         color: "white"
         text: modelData.show.name
         style: Text.Outline
+
         styleColor: "black"
         wrapMode: Text.Wrap
         font.family: webFont.font.family
         font.pixelSize: 40
-        width: searchedShowImage.width
+
         maximumLineCount: 2
+        width: searchedShowImage.width
         height: 100
       }
 
