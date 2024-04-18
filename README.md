@@ -2,7 +2,7 @@
 
 App desenvolvido como parte da avaliação técnica do processo seletivo para Software Engineer da Stone. O projeto faz uma consulta na API da [TV Maze](https://www.tvmaze.com/api#licensing) para listar uma variedade de filmes e séries.
 
-## Tecnologias Utilizadas :hammer_and_wrench:
+## Tecnologias Utilizadas 💻
 
 - QT Creator
 - QML
