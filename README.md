@@ -44,10 +44,10 @@ Aliás, um vídeo vale mais que mil palavras...
 Ninguém constrói absolutamente nada nesse mundo sozinho. Seguem alguns dos materiais usados como inspiração para esta implementação, e que podem ser muito valiosos para estudos futuros:
 
 [QML Docs](https://doc.qt.io/qt-6/qtquick-qmlmodule.html)<br>
-[MontyTheSoftwareEngineer](https://www.youtube.com/@MontyTheSoftwareEngineer),<br>
+[MontyTheSoftwareEngineer](https://www.youtube.com/@MontyTheSoftwareEngineer)<br>
 [Scythe Studio](https://www.youtube.com/@scythe-studio)
 
-Obrigado, Stone, pela oportunidade, em especial às figuras do Felipe Ranieri e do Luiz Galvão. Até a próxima, pessoal!
-<br><br><br>
+Obrigado, Stone, pela oportunidade, em especial, às figuras do Felipe Ranieri e do Luiz Galvão. Até a próxima, pessoal!
+<br><br>
 
 ![End Giphy](https://i.pinimg.com/originals/d5/ba/c7/d5bac75176f31335f0849b9a0284b2aa.gif)
