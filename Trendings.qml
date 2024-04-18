@@ -28,6 +28,7 @@ Rectangle {
     Text {
       id: trendingsTitle
       anchors.centerIn: parent
+
       color: "white"
       text: "Em alta"
       font.pixelSize: 40

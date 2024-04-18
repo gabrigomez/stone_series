@@ -21,7 +21,7 @@ Rectangle {
 
   Rectangle {
     id: closeButton
-    y: 20
+    y: 60
     x: 10
     z: 2
 
@@ -69,6 +69,7 @@ Rectangle {
       topMargin: 10
     }
     color: "transparent"
+    y: 10
     width: root.width
     height: root.height
 
@@ -97,7 +98,7 @@ Rectangle {
           width: 500
           height: 600
           source: showDetailsResult
-                  && showDetailsResult.image ? showDetailsResult.image.original : ''
+                  && showDetailsResult.image ? showDetailsResult.image.original : 'https://t3.ftcdn.net/jpg/03/34/83/22/360_F_334832255_IMxvzYRygjd20VlSaIAFZrQWjozQH6BQ.jpg'
         }
 
         Text {

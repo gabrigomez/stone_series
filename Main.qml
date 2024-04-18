@@ -6,7 +6,7 @@ import "Api.js" as Api
 
 Window {
   id: root
-  width: 600
+  width: 1600
   height: 1000
   visible: true
 
@@ -48,10 +48,11 @@ Window {
 
     SearchBar {
       id: searchContainer
-      z: 1
     }
 
-    Title {}
+    Title {
+      id: titleContainer
+    }
 
     Trendings {}
 
@@ -104,13 +105,12 @@ Window {
         delegate: SearchResults {}
       }
     }
-  }
-
-  ShowDetails {
-    id: showDetails
-    anchors {
-      top: root.top
-      bottom: root.bottom
+    ShowDetails {
+      id: showDetails
+      anchors {
+        top: root.top
+        bottom: root.bottom
+      }
     }
   }
 }

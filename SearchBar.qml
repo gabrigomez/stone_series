@@ -8,10 +8,14 @@ Rectangle {
   signal searchStarted
   signal searchStopped
 
-  height: 40
   color: "#0D1B2A"
   border.color: "gray"
-  width: parent.width / 3
+  x: 2
+  y: 4
+  z: 3
+
+  height: 40
+  width: parent.width / 3.5
 
   TextInput {
     id: searchInput
@@ -19,7 +23,7 @@ Rectangle {
     anchors.fill: parent
     verticalAlignment: TextInput.AlignVCenter
     font.pixelSize: 18
-    leftPadding: 4
+    leftPadding: 2
     rightPadding: 40
     color: "white"
 
@@ -55,6 +59,7 @@ Rectangle {
     target: searchContainer
     function onSearchStarted() {
       isSearching = true
+      openDetails = false
     }
   }
 }

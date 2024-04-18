@@ -1,17 +1,35 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
+import QtQuick
+import QtQuick.Controls
 
-Text {
+Rectangle {
   anchors {
     top: parent.top
     right: parent.right
-    rightMargin: 20
-    topMargin: 12
   }
-  text: "Stone Series"
-  color: "white"
-  font.pixelSize: 24
+  color: "transparent"
+  z: 3
+  width: 180
+  height: 50
 
-  font.family: "Manjari Thin"
-  font.bold: true
+  Image {
+    source: "https://cdn-icons-png.flaticon.com/512/1709/1709973.png"
+    anchors.right: parent.right
+    anchors.rightMargin: 10
+
+    y: 12
+    width: 25
+    height: 25
+  }
+
+  Text {
+    color: "white"
+    y: 16
+    text: "Stone Series"
+    style: Text.Outline
+
+    styleColor: "#08FF5B"
+    font.family: "Manjari Thin"
+    font.pixelSize: 24
+    font.bold: true
+  }
 }

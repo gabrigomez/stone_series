@@ -16,7 +16,7 @@ Rectangle {
     anchors {
       horizontalCenter: parent.horizontalCenter
       top: noResultsMessage.bottom
-      topMargin: 20
+      topMargin: 16
     }
     color: "white"
 
