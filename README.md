@@ -19,7 +19,7 @@ Sem mais delongas, vamos ao que interessa!
 A aplicação foi desenvolvida utilizando o QT Creator, na versão `13.0.0`, que, por sua vez, implementou o QT na versão `6.7.0`. É essencial ter essas especificações do QT para rodar corretamente a plataforma.
 Também se faz necessária a presença das seguintes libs: `QT Network Authorization`, `QT Positioning`, `QT WebChannel` e `QT WebEngine`, todas na versão `6.7.0`. Para maiores informações sobre o QT, [clique aqui](https://www.qt.io/download).
 
-Uma vez tendo o ambiente corretamente configurado, basta fazer o `git clione` do repositório e abrí-lo no QT Creator. Lá é possível, com apenas um clique, buildar e rodar o projeto.
+Uma vez tendo o ambiente corretamente configurado, basta fazer o `git clone` do repositório e abrí-lo no QT Creator. Lá é possível, com apenas um clique, buildar e rodar o projeto.
 
 Aliás, um vídeo vale mais que mil palavras...
 <br>
