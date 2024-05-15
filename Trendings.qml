@@ -3,7 +3,7 @@ import QtQuick.Layouts
 
 Rectangle {
   id: trendingsContainer
-  visible: !isSearching && !busy
+  visible: !isSearching && !busy && !openDetails
   anchors {
     top: searchContainer.bottom
   }
